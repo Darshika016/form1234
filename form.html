@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+
+<h2>User Information Form</h2>
+<form action="/submit_form" method="post">
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other" required>
+    <label for="other">Other</label><br><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <!-- Add more countries as needed -->
+    </select><br><br>
+
+    <label for="favorite_color">Favorite Color:</label>
+    <input type="text" id="favorite_color" name="favorite_color"><br><br>
+
+    <label for="how_heard">How did you hear about us?</label>
+    <input type="text" id="how_heard" name="how_heard"><br><br>
+
+    <label>Subscribe to our newsletter:</label>
+    <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    <label for="file_upload">Upload File:</label>
+    <input type="file" id="file_upload" name="file_upload"><br><br>
+
+    <label>Terms and Conditions:</label>
+    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+    <label for="terms_conditions">I agree to the Terms and Conditions</label><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
